@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0000"> <!-- Set the background color or image as needed -->
+
+    <!-- Add your app's logo or image in the center -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon"
+        android:scaleType="centerInside"
+        android:contentDescription="LOGO" />
+
+    <!-- Add a ProgressBar below the logo -->
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logoImageView"
+    android:layout_marginTop="16dp"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:visibility="visible"/>
+
+    <!-- You can also add text or a message below the progress bar -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loadingProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Loading..."
+    android:textColor="@android:color/white" />
+
+</RelativeLayout>

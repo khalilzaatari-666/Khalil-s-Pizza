@@ -1,0 +1,61 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/pizzaDetailImage"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/pizza1"
+        android:layout_gravity="center"
+        android:background="@drawable/back"
+        />
+
+    <TextView
+        android:id="@+id/pizzaDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza Name:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingTop="16dp"
+    />
+
+    <TextView
+        android:id="@+id/pizzaDetailDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:paddingTop="8dp"
+    />
+
+    <TextView
+        android:id="@+id/pizzaDetailNbrIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Ingredients:"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:paddingTop="8dp"
+    />
+
+    <TextView
+        android:id="@+id/pizzaDetailDuree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preparation Time:"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:paddingTop="8dp"
+    />
+
+    <!-- Add more TextView elements for other pizza details here -->
+
+</LinearLayout>
